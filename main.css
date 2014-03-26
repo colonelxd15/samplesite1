@@ -49,25 +49,24 @@ body{
 	width: 720px;
 }
 #left{
-	width: 50px;
-	height: 500px;
-	position: relative;
-	float: left;
 	margin: 200px 0px;
+	float: left;
 }
 #right
 {
+	margin: 200px 670px;
+	float: right;
+}
+.sliderNavButton{
+	z-index: 1;
 	width: 50px;
 	height: 500px;
-	position: relative;
-	float: right;
-	margin: 185px 0px;
+	position: absolute;	
 }
 #withimage{
 	float:left;
 	margin: 0px;
 	text-align: -20px;
-
 }
 #primarylink{
 	vertical-align: bottom;
@@ -77,6 +76,7 @@ body{
 }
 #slider{
 	float:left;
+	position: relative;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-bottom: 10px;
@@ -86,7 +86,8 @@ body{
 	background-color: white;
 }
 #sidebar{
-	float:left;
+	position: relative;
+	float: left;
 	margin-left: 10px;
 	margin-bottom: 10px;
 	margin-top: 20px;
@@ -97,7 +98,7 @@ body{
 }
 .sliderUl{
 	list-style: none;
-	width: 2100px;
+	width: 700px;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
