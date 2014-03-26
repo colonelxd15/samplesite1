@@ -60,7 +60,7 @@ body{
 .sliderNavButton{
 	z-index: 1;
 	width: 50px;
-	height: 500px;
+	height: 200px;
 	position: absolute;	
 }
 #withimage{
