@@ -3,6 +3,11 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>	
+		<link href="jquery-ui-1.10.4.custom/css/ui-lightness/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+		<script src="jquery-ui-1.10.4.custom/js/jquery-1.10.2.js"></script>
+		<script src="jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js">
+		</script>
+		<title>Advisor & co.</title>
 	</head>
 	<body>
 		<div id="top">
@@ -35,11 +40,21 @@
 			<div id="main">
 			
 			<div id="left" class="sliderNavButton">
-				<img src="resources/left.png">
+				<a href="#" class="control_prev">
+					<img src="resources/left.png">
+				</a>
 			</div>
 			<div id="right" class="sliderNavButton">
-				<img src="resources/right.png">
+				<a href="#" class="control_next">
+					<img src="resources/right.png">
+				</a>
 			</div>
+			<div id="sliderPlay">
+				<a href="#" class="play">
+					<img src="resources/play.png">
+				</a>
+			</div>
+
 
 			<div id="slider">
 				<ul class="sliderUl">
@@ -107,5 +122,6 @@
 		</div>
 	
 	</div>
+	<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
