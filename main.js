@@ -40,7 +40,6 @@ jQuery(document).ready(function ($) {
      */
 
     function moveRight() {
-        $('#slider')
         $('#sliderUl').animate({
             left: - slideWidth
         }, 500, function () {
