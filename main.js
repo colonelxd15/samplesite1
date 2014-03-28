@@ -12,25 +12,18 @@ jQuery(document).ready(function ($) {
         
     function right()
     {
-        counter--;
         $('#slider ul').animate({'margin-left':
-            counter * slideWidth + 'px'}, 1000
+            "-" + slideWidth + 'px'}, 1000
             ,function(){
-            $('#slider ul li:last-child').appendTo('#slider ul');
-            //$('#slider ul').css('margin-left','');
-        });
-        console.log(slideWidth);
-               
+            $('#slider ul li:first-child').appendTo('#slider ul');
+            $('#slider ul').css('margin-left','');
+        });    
     }
     function left()
     {
-        counter++;
-        $('#slider ul').animate({ 'margin-left': counter * slideWidth + 'px'}, 1000
-            ,function(){
-            $('#slider ul li:first-child').prependTo('#slider ul');
-            //$('#slider ul').css('margin-left','');
-        });
-        console.log(slideWidth);
+        $('#slider ul li:last-child').prependTo('#slider ul');
+        $('#slider ul').css('margin-left',"-" + slideWidth + "px");
+        $('#slider ul').animate({ 'margin-left': '0px'}, 1000);
     }
 
 });
