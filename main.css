@@ -14,6 +14,27 @@ body{
 	width: 100%;
 	height: 550px;
 }
+.control_prev{
+	position: absolute;	
+	z-index: 1;
+	height: 100px;
+	width: 35px;
+	margin: 200px 0px;
+	float: left;
+	background: url('resources/arrows_white_new3.png') 0px 0px;
+	background-repeat: no-repeat;
+
+}
+.control_next{
+	position: absolute;	
+	z-index: 1;
+	height: 100px;
+	width: 35px;
+	margin: 200px 670px;
+	float: right;
+	background: url('resources/arrows_white_new3.png') -60px 0px;
+	background-repeat: no-repeat;
+}
 #main{
 	width: 960px;
 	height: auto;
@@ -47,22 +68,6 @@ body{
 	padding: 0px;
 	height: 500px;
 	width: 720px;
-}
-#left{
-	margin: 200px 0px;
-	float: left;
-}
-
-#right
-{
-	margin: 200px 670px;
-	float: right;
-}
-.sliderNavButton{
-	background-image: url('resources/play.png');
-	background-repeat: no-repeat;
-	z-index: 1;
-	position: absolute;	
 }
 #withimage{
 	float:left;
